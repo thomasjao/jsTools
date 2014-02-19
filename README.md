@@ -1,5 +1,3 @@
-```html
-<h2>jsTools</h2>
+# JavaScript Tools
+## records useful tools written in JavaScript
 
-<p>records some JavaScript useful tools</p>
-```
