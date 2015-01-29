@@ -1,0 +1,14 @@
+/* str2JSDate converts Taiwanese calendar to JavaScript UTC time */
+var str2JSDate = function( date_str ) {
+  var dt = new Date();
+  var date_arr = date_str.split('.');
+  dt.setYear( parseInt( date_arr[0]) + 1911 );
+  dt.setMonth( parseInt( date_arr[1] ) - 1 );
+  dt.setDate( date_arr[2] );
+  return dt;
+  }
+  
+/* Usage */
+var datestring = '97.03.01';
+var js_date = str2JSDate( datestring );
+/* return Sat Mar 01 2008 20:11:06 GMT+0800 (CST) */
